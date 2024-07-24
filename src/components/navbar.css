@@ -1,6 +1,28 @@
-.nav-logo img {
+.nav-logo {
   position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  z-index: 1000;
+}
+
+.nav-logo img {
   width: 25vw;
   height: auto;
-  z-index: 1000;
+}
+
+.navbar-container {
+  outline: 0.4vh solid red;
+}
+
+/* Adjust logo size for larger screens */
+@media (min-width: 768px) {
+  .nav-logo img {
+    width: 15vw; /* Adjust for tablet or small desktop */
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-logo img {
+    width: 10vw; /* Adjust for larger desktops */
+  }
 }

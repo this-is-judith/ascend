@@ -22,25 +22,25 @@ function Navbar() {
           {/* Jump */}
           <div className="navbar-item">
             <div className="navbar-item-icon"></div>
-            {/* <div className="navbar-item-label">JUMP</div> */}
+            <div className="navbar-item-label">JUMP</div>
           </div>
 
           {/* Pressure */}
           <div className="navbar-item">
             <div className="navbar-item-icon"></div>
-            {/* <div className="navbar-item-label">PRESSURE</div> */}
+            <div className="navbar-item-label">PRESSURE</div>
           </div>
 
           {/* Temperature */}
           <div className="navbar-item">
             <div className="navbar-item-icon"></div>
-            {/* <div className="navbar-item-label">TEMPERATURE</div> */}
+            <div className="navbar-item-label">TEMPERATURE</div>
           </div>
 
           {/* Units */}
           <div className="navbar-item">
             <div className="navbar-item-icon"></div>
-            {/* <div className="navbar-item-label">UNITS</div> */}
+            <div className="navbar-item-label">UNITS</div>
           </div>
 
           {/* Height Line */}
@@ -49,7 +49,7 @@ function Navbar() {
               {/* onClick={handleClick} */}
               {/* className={click ? "height-line" : "crossed-out-height-line"} */}
             </div>
-            {/* <div className="navbar-item-label">HEIGHT LINE</div> */}
+            <div className="navbar-item-label">HEIGHT LINE</div>
           </div>
 
           {/* Dark/Light Mode */}
@@ -58,7 +58,7 @@ function Navbar() {
               {/* onClick={handleClick} */}
               {/* className={click ? "height-line" : "crossed-out-height-line"} */}
             </div>
-            {/* <div className="navbar-item-label">DARK</div> */}
+            <div className="navbar-item-label">DARK</div>
           </div>
         </div>
       </nav>
