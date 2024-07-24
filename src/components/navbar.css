@@ -1,0 +1,6 @@
+.nav-logo img {
+  position: fixed;
+  width: 25vw;
+  height: auto;
+  z-index: 1000;
+}
