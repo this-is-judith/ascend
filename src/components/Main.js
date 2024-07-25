@@ -5,7 +5,7 @@ import { FaPerson } from "react-icons/fa6";
 function Main() {
   return (
     <>
-      <section className="main-section crust" id="section1">
+      <section className="main-section" id="section1">
         <div className="grass-container">
           <div className="grass-left"></div>
 
@@ -17,7 +17,7 @@ function Main() {
           <div className="grass-right"></div>
         </div>
 
-        <div className="intro">
+        <div className="intro crust">
           <div className="ace-animation">
             <div className="ace-left"></div>
             <div className="ace-cage">
