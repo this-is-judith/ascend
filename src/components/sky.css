@@ -18,3 +18,12 @@
     #ffffff
   );
 }
+
+.earths-surface {
+  color: white;
+  /* outline: 0.1vh solid black; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
