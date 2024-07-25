@@ -40,7 +40,7 @@ function Navbar() {
               <div className="navbar-item-icon temperature">
                 <FaThermometerHalf />
               </div>
-              <div className="navbar-item-label">TEMPERATURE</div>
+              <div className="navbar-item-label">TEMP</div>
             </div>
 
             {/* Units */}
