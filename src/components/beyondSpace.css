@@ -1,0 +1,28 @@
+.outro-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topmost,
+.question {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: 0.1vh solid black;
+}
+
+.acknowledgements,
+.poem,
+.aka,
+.scroll-down {
+  flex: 1;
+  outline: 0.1vh solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
