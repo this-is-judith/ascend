@@ -34,7 +34,21 @@ function Main() {
             <h2>made by Judith Osei-Tete</h2>
           </div>
 
-          <div className="instructions">Instructions</div>
+          <div className="instructions">
+            <div className="instruction-1">
+              <p>Lift the barrier to fly with Ace</p>
+            </div>
+
+            <div className="instruction-2">
+              <p>Scroll up to continue without Ace</p>
+            </div>
+
+            <div className="instruction-3">
+              <p>Click here for a quick tutorial</p>
+            </div>
+          </div>
+
+          <div className="filler"></div>
         </div>
       </section>
     </>
