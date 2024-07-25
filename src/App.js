@@ -6,7 +6,7 @@ import Stratosphere from "./components/Stratosphere";
 
 function App() {
   useEffect(() => {
-    // Make sure page begins from bottom
+    // Begin page from bottom
     const scrollToBottom = () => {
       window.scrollTo(0, document.body.scrollHeight);
     };
