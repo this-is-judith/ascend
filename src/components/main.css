@@ -30,7 +30,7 @@
 
 .subtitle h2 {
   font-size: 2.5vh;
-  font-weight: 300;
+  font-weight: 500;
   margin: -4vh 0 0 0;
 }
 
@@ -99,9 +99,11 @@
 .instruction-2,
 .instruction-3 {
   flex: 1;
-  border-bottom: 0.2vh solid yellow;
   display: flex;
   align-items: end;
+  text-decoration: underline;
+  text-underline-offset: 1.25vh;
+  text-decoration-color: yellow;
 }
 
 .instruction-1 p,
