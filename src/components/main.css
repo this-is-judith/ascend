@@ -1,6 +1,5 @@
 .crust-gradient {
-  /* background: linear-gradient(to bottom, #b07f54, #6a3b2a); */
-  background: gray;
+  background: brown;
 }
 
 .main-section {
@@ -37,6 +36,7 @@
 .grass-container {
   flex: 1;
   display: flex;
+  background-color: #a2c2e4;
 }
 
 .intro {
@@ -54,6 +54,13 @@
   flex: 2;
 }
 
+.grass-left,
+.grass-right,
+.grass-middle-top {
+  display: flex;
+  overflow: hidden;
+}
+
 .grass-middle {
   flex: 1.75;
   display: flex;
@@ -63,6 +70,10 @@
 .grass-middle-top,
 .grass-middle-bottom {
   flex: 1;
+}
+
+.grass-middle-bottom {
+  background-color: white;
 }
 
 .ace-container {
@@ -135,6 +146,10 @@
   .subtitle h2 {
     font-size: 2.5vh;
   }
+
+  .grass-middle {
+    flex: 1.25;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -152,5 +167,9 @@
 
   .subtitle h2 {
     font-size: 3vh;
+  }
+
+  .grass-middle {
+    flex: 1;
   }
 }

@@ -1,20 +1,25 @@
 import React from "react";
 import "./main.css";
 import { FaPerson } from "react-icons/fa6";
+import Grass from "./Grass";
 
 function Main() {
   return (
     <>
       <section className="main-section" id="section1">
         <div className="grass-container">
-          <div className="grass-left"></div>
+          <div className="grass-left">
+            <Grass />
+          </div>
 
           <div className="grass-middle">
             <div className="grass-middle-top"></div>
             <div className="grass-middle-bottom"></div>
           </div>
 
-          <div className="grass-right"></div>
+          <div className="grass-right">
+            <Grass />
+          </div>
         </div>
 
         <div className="intro crust-gradient">
