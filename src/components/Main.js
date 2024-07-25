@@ -5,11 +5,7 @@ import { FaPerson } from "react-icons/fa6";
 function Main() {
   return (
     <>
-      <section className="main-section" id="section1">
-        {/* <div className="earths-surface gradient">
-          <h1 className="text-2d-effect">EARTH'S SURFACE</h1>
-        </div> */}
-
+      <section className="main-section crust" id="section1">
         <div className="grass-container">
           <div className="grass-left"></div>
 

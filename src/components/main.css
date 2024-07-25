@@ -1,3 +1,15 @@
+.crust {
+  background: linear-gradient(
+    to bottom,
+    #d2b48c,
+    /* Tan, representing continental crust */ #a0522d,
+    /* Sienna, representing rocks like granite */ #8b4513,
+    /* Saddle Brown, representing sedimentary rocks */ #c0c0c0,
+    /* Silver, representing lighter crustal rocks */ #f5f5f5
+      /* White Smoke, for a light and weathered appearance */
+  );
+}
+
 .main-section {
   height: 80vh;
   display: flex;
@@ -40,7 +52,6 @@
 }
 
 .intro {
-  background-color: #4e3629;
   color: white;
   /* outline: 0.1vh solid black; */
   flex: 4;

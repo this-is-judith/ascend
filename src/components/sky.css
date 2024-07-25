@@ -5,21 +5,16 @@
 .gradient {
   background: linear-gradient(
     to top,
-    #87ceeb,
-    /* Light Sky Blue (Earth's surface) */ #b0e0e6,
-    /* Powder Blue */ #add8e6,
-    /* Light Blue */ #87cefa,
-    /* Light Sky Blue (a touch lighter) */ #4682b4,
-    /* Steel Blue */ #4169e1,
-    /* Royal Blue */ #1e90ff,
-    /* Dodger Blue */ #0000ff,
-    /* Blue */ #00008b,
-    /* Dark Blue */ #000080,
-    /* Navy */ #000000,
-    /* Black (transition to space) */ #333333,
-    /* Very Dark Gray */ #666666,
-    /* Dark Gray */ #999999,
-    /* Medium Gray */ #cccccc,
-    /* Light Gray */ #ffffff /* White (end of gradient) */
+    #a2c2e4,
+    #7f9bb3,
+    #4b6a9d,
+    #2e3a5a,
+    #000000,
+    #000000,
+    #000000,
+    #666666,
+    #999999,
+    #cccccc,
+    #ffffff
   );
 }
