@@ -6,8 +6,19 @@ function Main() {
   return (
     <>
       <section className="main-section" id="section1">
-        <div className="earths-surface">
+        {/* <div className="earths-surface gradient">
           <h1 className="text-2d-effect">EARTH'S SURFACE</h1>
+        </div> */}
+
+        <div className="grass-container">
+          <div className="grass-left"></div>
+
+          <div className="grass-middle">
+            <div className="grass-middle-top"></div>
+            <div className="grass-middle-bottom"></div>
+          </div>
+
+          <div className="grass-right"></div>
         </div>
 
         <div className="intro">

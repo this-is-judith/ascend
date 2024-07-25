@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Stratosphere from "./components/Stratosphere";
 import BeyondSpace from "./components/BeyondSpace";
+import Sky from "./components/Sky";
 
 function App() {
   const [isAceFree, setIsAceFree] = useState(false);
@@ -43,12 +44,8 @@ function App() {
 
   return (
     <div className="App">
-      <BeyondSpace />
-      <Stratosphere />
-      <Stratosphere />
-      <Stratosphere />
-      <Stratosphere />
-      <Stratosphere />
+      {/* <BeyondSpace /> */}
+      <Sky />
       <Main />
       <Navbar />
     </div>
