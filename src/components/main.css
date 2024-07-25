@@ -74,12 +74,13 @@
   flex-direction: column;
 }
 
-.grass-middle-top,
-.grass-middle-bottom {
-  flex: 1;
+.grass-middle-top {
+  flex: 3;
+  display: flex;
 }
 
 .grass-middle-bottom {
+  flex: 1;
   background-color: white;
 }
 
@@ -134,8 +135,23 @@
   flex: 1.5;
 }
 
+.enlarge-text {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.enlarge-text:hover {
+  transform: scale(1.1); /* Enlarge the text by 10% */
+  cursor: pointer;
+}
+
 /*=============== Media Queries ===============*/
 /* For larger screens */
+@media (min-width: 667px) {
+  .top-middle {
+    flex: 1.5;
+  }
+}
+
 @media (min-width: 768px) {
   .ace-cage {
     flex: 1.25;

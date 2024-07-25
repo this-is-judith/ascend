@@ -1,4 +1,3 @@
-/* Base style for grass blades */
 .grass-blade {
   width: 0; /* No width, only height and borders create the shape */
   border-left: 0.8vh solid transparent; /* Create the left side */
@@ -37,60 +36,60 @@
 /* Keyframes for sway animations */
 @keyframes sway-all {
   0% {
-    transform: rotate(-20deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(-20deg);
   }
   50% {
-    transform: rotate(20deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(20deg);
   }
   100% {
-    transform: rotate(-20deg); /* Return to starting point */
+    transform: rotate(-20deg);
   }
 }
 
 @keyframes sway-divisible-by-2 {
   0% {
-    transform: rotate(-10deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(-10deg);
   }
   50% {
-    transform: rotate(10deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(10deg);
   }
   100% {
-    transform: rotate(-10deg); /* Return to starting point */
+    transform: rotate(-10deg);
   }
 }
 
 @keyframes sway-divisible-by-3 {
   0% {
-    transform: rotate(-8deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(-8deg);
   }
   50% {
-    transform: rotate(8deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(8deg);
   }
   100% {
-    transform: rotate(-8deg); /* Return to starting point */
+    transform: rotate(-8deg);
   }
 }
 
 @keyframes sway-divisible-by-5 {
   0% {
-    transform: rotate(-5deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(-5deg);
   }
   50% {
-    transform: rotate(5deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(5deg);
   }
   100% {
-    transform: rotate(-5deg); /* Return to starting point */
+    transform: rotate(-5deg);
   }
 }
 
 @keyframes sway-divisible-by-7 {
   0% {
-    transform: rotate(-25deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(-25deg);
   }
   50% {
-    transform: rotate(25deg); /* Slightly adjusted for smoother motion */
+    transform: rotate(25deg);
   }
   100% {
-    transform: rotate(-25deg); /* Return to starting point */
+    transform: rotate(-25deg);
   }
 }
