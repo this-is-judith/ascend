@@ -7,7 +7,7 @@ function Main() {
     <>
       <section className="main-section" id="section1">
         <div className="earths-surface">
-          <h1>EARTH'S SURFACE</h1>
+          <h1 className="text-2d-effect">EARTH'S SURFACE</h1>
         </div>
 
         <div className="intro">
