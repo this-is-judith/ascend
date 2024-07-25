@@ -6,9 +6,25 @@ const Grass = () => {
 
   return (
     <>
-      {blades.map((_, index) => (
-        <div key={index} className="grass-blade"></div>
-      ))}
+      {blades.map((_, index) => {
+        let className = "grass-blade";
+
+        // Add classes based on the index
+        if (index % 2 === 0) {
+          className += " divisible-by-2";
+        }
+        if (index % 3 === 0) {
+          className += " divisible-by-3";
+        }
+        if (index % 5 === 0) {
+          className += " divisible-by-5";
+        }
+        if (index % 7 === 0) {
+          className += " divisible-by-7";
+        }
+
+        return <div key={index} className={className}></div>;
+      })}
     </>
   );
 };

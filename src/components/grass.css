@@ -1,10 +1,11 @@
+/* Base style for grass blades */
 .grass-blade {
   width: 0; /* No width, only height and borders create the shape */
   border-left: 0.8vh solid transparent; /* Create the left side */
   border-right: 0.8vh solid transparent; /* Create the right side */
   border-bottom: 4vh solid green; /* Create the blade color */
   transform-origin: bottom;
-  animation: sway 3s infinite ease-in-out;
+  animation: sway-all 5s infinite cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .grass-blade::before {
@@ -16,12 +17,80 @@
   border-bottom: 4vh solid green; /* Create the color of the new triangle */
 }
 
-@keyframes sway {
-  0%,
-  100% {
-    transform: rotate(-15deg);
+/* Classes for different sway animations */
+.divisible-by-2 {
+  animation: sway-divisible-by-2 4s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.divisible-by-3 {
+  animation: sway-divisible-by-3 5s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.divisible-by-5 {
+  animation: sway-divisible-by-5 7s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.divisible-by-7 {
+  animation: sway-divisible-by-7 10s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* Keyframes for sway animations */
+@keyframes sway-all {
+  0% {
+    transform: rotate(-20deg); /* Slightly adjusted for smoother motion */
   }
   50% {
-    transform: rotate(15deg);
+    transform: rotate(20deg); /* Slightly adjusted for smoother motion */
+  }
+  100% {
+    transform: rotate(-20deg); /* Return to starting point */
+  }
+}
+
+@keyframes sway-divisible-by-2 {
+  0% {
+    transform: rotate(-10deg); /* Slightly adjusted for smoother motion */
+  }
+  50% {
+    transform: rotate(10deg); /* Slightly adjusted for smoother motion */
+  }
+  100% {
+    transform: rotate(-10deg); /* Return to starting point */
+  }
+}
+
+@keyframes sway-divisible-by-3 {
+  0% {
+    transform: rotate(-8deg); /* Slightly adjusted for smoother motion */
+  }
+  50% {
+    transform: rotate(8deg); /* Slightly adjusted for smoother motion */
+  }
+  100% {
+    transform: rotate(-8deg); /* Return to starting point */
+  }
+}
+
+@keyframes sway-divisible-by-5 {
+  0% {
+    transform: rotate(-5deg); /* Slightly adjusted for smoother motion */
+  }
+  50% {
+    transform: rotate(5deg); /* Slightly adjusted for smoother motion */
+  }
+  100% {
+    transform: rotate(-5deg); /* Return to starting point */
+  }
+}
+
+@keyframes sway-divisible-by-7 {
+  0% {
+    transform: rotate(-25deg); /* Slightly adjusted for smoother motion */
+  }
+  50% {
+    transform: rotate(25deg); /* Slightly adjusted for smoother motion */
+  }
+  100% {
+    transform: rotate(-25deg); /* Return to starting point */
   }
 }
