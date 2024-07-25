@@ -73,9 +73,9 @@ function Navbar() {
           </div>
         )}
 
-        <a href="#" className="nav-logo link" onClick={toggleShowMenu}>
+        <div href="" className="nav-logo" onClick={toggleShowMenu}>
           <img src={logo} alt="Ascend Logo" />
-        </a>
+        </div>
       </nav>
     </>
   );

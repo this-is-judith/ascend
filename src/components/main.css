@@ -20,3 +20,23 @@
   align-items: center;
   justify-content: center;
 }
+
+.ace-animation,
+.title,
+.subtitle,
+.welcome {
+  outline: 0.1vh solid red;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ace-animation {
+  flex: 3;
+}
+
+.welcome {
+  flex: 10;
+}

@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
+import Stratosphere from "./components/Stratosphere";
 
 function App() {
+  useEffect(() => {
+    // Make sure page begins from bottom
+    const scrollToBottom = () => {
+      window.scrollTo(0, document.body.scrollHeight);
+    };
+
+    scrollToBottom();
+  }, []);
+
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <Stratosphere />
+      <Stratosphere />
+      <Stratosphere />
+      <Stratosphere />
+      <Stratosphere />
       <Main />
+      <Navbar />
     </div>
   );
 }

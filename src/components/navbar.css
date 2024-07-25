@@ -9,10 +9,8 @@
   z-index: 1000;
 }
 
-.navbar-container {
-}
-
-.navbar-logo {
+.nav-logo {
+  cursor: pointer;
 }
 
 .nav-logo img {
