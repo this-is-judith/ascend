@@ -6,15 +6,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1000;
 }
 
-.nav-logo {
-  z-index: 1000;
+.navbar-container {
+}
+
+.navbar-logo {
 }
 
 .nav-logo img {
   width: 25vw;
-  height: auto;
 }
 
 .navbar-container {
@@ -23,6 +25,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  outline: 0.2vh solid black;
+}
+
+.navbar-item {
+  outline: 0.1vh solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-item-icon {
+  /* outline: 0.2vh solid green; */
+  padding: 0.5vh;
+  padding-top: 1vh;
+  font-size: 4vh;
+}
+
+.navbar-item-label {
+  /* outline: 0.2vh solid blue; */
+  padding: 0.5vh;
 }
 
 /*=============== Media Queries ===============*/
