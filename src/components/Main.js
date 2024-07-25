@@ -10,7 +10,11 @@ function Main() {
         </div>
 
         <div className="intro">
-          <div className="ace-animation"></div>
+          <div className="ace-animation">
+            <div className="ace-left"></div>
+            <div className="ace-middle"></div>
+            <div className="ace-right"></div>
+          </div>
 
           <div className="title">
             <h1>Ascend</h1>

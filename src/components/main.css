@@ -7,7 +7,7 @@
 .earths-surface {
   background-color: rgb(74, 115, 165);
   color: white;
-  outline: 0.1vh solid black;
+  /* outline: 0.1vh solid black; */
   flex: 1;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
 .intro {
   background-color: #4e3629;
   color: white;
-  outline: 0.1vh solid black;
+  /* outline: 0.1vh solid black; */
   flex: 4;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,22 @@
 }
 
 .ace-animation {
-  flex: 3;
+  flex: 5;
+  display: flex;
+}
+
+.ace-left,
+.ace-middle,
+.ace-right {
+  /* outline: 0.1vh solid white; */
+  flex: 2;
+  height: 100%;
+}
+
+.ace-middle {
+  flex: 1.75;
+  border: 0.1vh solid white;
+  border-top: 2vh solid white;
 }
 
 .welcome {
