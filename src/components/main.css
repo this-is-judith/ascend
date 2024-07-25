@@ -36,7 +36,14 @@
 .grass-container {
   flex: 1;
   display: flex;
-  background-color: #a2c2e4;
+  background: linear-gradient(
+    to bottom,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    green
+  );
 }
 
 .intro {
