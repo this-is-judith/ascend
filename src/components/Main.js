@@ -5,7 +5,9 @@ function Main() {
   return (
     <>
       <section className="main-section" id="section1">
-        <div className="earths-surface">EARTH'S SURFACE</div>
+        <div className="earths-surface">
+          <h1>EARTH'S SURFACE</h1>
+        </div>
 
         <div className="intro">
           <div className="ace-animation"></div>
