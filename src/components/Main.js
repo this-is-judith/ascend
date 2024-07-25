@@ -1,5 +1,6 @@
 import React from "react";
 import "./main.css";
+import { FaPerson } from "react-icons/fa6";
 
 function Main() {
   return (
@@ -12,7 +13,9 @@ function Main() {
         <div className="intro">
           <div className="ace-animation">
             <div className="ace-left"></div>
-            <div className="ace-middle"></div>
+            <div className="ace-cage">
+              <FaPerson className="ace" />
+            </div>
             <div className="ace-right"></div>
           </div>
 
