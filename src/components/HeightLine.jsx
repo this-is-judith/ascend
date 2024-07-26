@@ -8,6 +8,7 @@ let onVisibilityChange = (isVisible) => {};
 const HeightLine = () => {
   // VH TO HEIGHT CONVERSIONS
   const [height, setHeight] = useState(0);
+  const [showQuestionMarks, setShowQuestionMarks] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +19,7 @@ const HeightLine = () => {
       const scrollFromBottom = totalHeight - window.scrollY;
       const vh = window.innerHeight;
       const km = (scrollFromBottom / vh) * 10; // Convert vh to kilometers (1 vh = 0.1km)
-      setHeight(km.toFixed(0)); // Set height in kilometers with 2 decimal places
+      setHeight(km.toFixed(0)); // Set height in kilometers
     };
 
     // Initial calculation
@@ -45,7 +46,9 @@ const HeightLine = () => {
         documentHeight - (scrollPosition + viewportHeight);
 
       // Set visibility if the distance from the bottom is greater than 24% of the viewport height
-      const newVisibility = distanceFromBottom > 0.24 * viewportHeight;
+      const newVisibility =
+        distanceFromBottom > 0.24 * viewportHeight &&
+        distanceFromBottom < 1035 * viewportHeight;
       setIsVisible(newVisibility);
       onVisibilityChange(newVisibility); // Call the callback function
     };
@@ -61,7 +64,9 @@ const HeightLine = () => {
       {isVisible && (
         <div className="height-line-container">
           <span className="height-line-text">
-            {height} {height == 1 ? "KILOMETER" : "KILOMETERS"} HIGH
+            {height > 10200
+              ? "??? KILOMETERS HIGH"
+              : `${height} ${height === 1 ? "KILOMETER" : "KILOMETERS"} HIGH`}
           </span>
         </div>
       )}

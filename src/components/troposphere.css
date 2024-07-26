@@ -4,7 +4,7 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .main-layer h2 {
