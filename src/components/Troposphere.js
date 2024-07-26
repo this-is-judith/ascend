@@ -22,7 +22,7 @@ function Troposphere() {
 
   return (
     <>
-      <section className="troposphere-container">
+      <section className="troposphere-container main-layer">
         <h2>TROPOSPHERE</h2>
 
         {isHeightLineVisible && (

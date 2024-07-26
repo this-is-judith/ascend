@@ -1,4 +1,9 @@
 .stratosphere-container {
   height: 372vh;
-  background-color: grey;
+  border-top: 0.2vh solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 }

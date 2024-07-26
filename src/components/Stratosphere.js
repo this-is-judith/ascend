@@ -4,7 +4,9 @@ import "./stratosphere.css";
 function Stratosphere() {
   return (
     <>
-      <section className="stratosphere-container">STRATOSPHERE</section>
+      <section className="stratosphere-container main-layer">
+        <h2>STRATOSPHERE</h2>
+      </section>
     </>
   );
 }
