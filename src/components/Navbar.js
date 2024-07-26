@@ -59,7 +59,7 @@ function Navbar() {
                 {/* onClick={handleClick} */}
                 {/* className={click ? "height-line" : "crossed-out-height-line"} */}
               </div>
-              <div className="navbar-item-label">DARK</div>
+              <div className="navbar-item-label dark-label">DARK</div>
             </div>
           </div>
         )}

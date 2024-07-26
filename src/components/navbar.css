@@ -35,6 +35,11 @@
   align-items: center;
   margin-bottom: 2vh;
   color: black;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  background-color: grey;
 }
 
 .jump {
@@ -49,6 +54,11 @@
 .dark {
   border-bottom-left-radius: 2vh;
   border-bottom-right-radius: 2vh;
+  margin-bottom: 0vh;
+}
+
+.dark-label {
+  margin-bottom: 2vh;
 }
 
 .navbar-item-icon {
@@ -71,15 +81,11 @@
 /* For larger screens */
 @media (min-width: 768px) {
   .nav-logo img {
-    width: 15vw;
-  }
-  .navbar-item-label {
-    font-size: 2.5vh;
+    width: 18vw;
   }
 
-  .navbar-container {
-    padding-left: 0.5vh;
-    padding-right: 0.5vh;
+  .navbar-item-label {
+    font-size: 2.5vh;
   }
 
   .navbar-item-icon {
@@ -89,10 +95,10 @@
 
 @media (min-width: 1024px) {
   .nav-logo img {
-    width: 12vw;
+    width: 15vw;
   }
 
-  .navbar-container {
+  .navbar-item {
     padding-left: 0.7vh;
     padding-right: 0.7vh;
   }
@@ -122,9 +128,13 @@
 }
 
 @media (min-width: 1280px) {
+  .nav-logo img {
+    width: 12vw;
+  }
+
   .navbar-container {
-    padding-left: -3vh;
-    padding-right: -3vh;
+    padding-left: 0vh;
+    padding-right: 0vh;
   }
 
   .navbar-item-icon {
