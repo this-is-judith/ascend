@@ -47,7 +47,23 @@
 }
 
 .grass-container.ace-activated {
-  background-color: #a2c2e4;
+  background: linear-gradient(
+    to bottom,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    #a2c2e4,
+    green
+  );
+}
+
+.grass-container.main-hidden {
   background: linear-gradient(
     to bottom,
     #a2c2e4,
@@ -105,6 +121,11 @@
 }
 
 .grass-middle-bottom.ace-activated {
+  background-color: #a2c2e4;
+  z-index: -1;
+}
+
+.grass-middle-bottom.main-hidden {
   background-color: #a2c2e4;
   z-index: -1;
 }
