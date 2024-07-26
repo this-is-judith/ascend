@@ -43,6 +43,13 @@
   left: 0vh;
 }
 
+.burj {
+  position: absolute;
+  bottom: -7.5vh;
+  left: 25vh;
+  width: 8vh;
+}
+
 @keyframes sway {
   0% {
     transform: translateX(-10px);
@@ -57,10 +64,24 @@
 
 /*=============== Media Queries ===============*/
 /* For smaller screens */
+@media (min-width: 360px) {
+  .burj {
+    bottom: -6.75vh;
+    left: 23vh;
+    width: 6vh;
+  }
+}
+
 @media (min-width: 390px) {
   .waterfall {
     bottom: -6.5vh;
     width: 13vh;
+  }
+
+  .burj {
+    bottom: -6.75vh;
+    left: 20vh;
+    width: 6vh;
   }
 }
 
@@ -68,6 +89,12 @@
   .waterfall {
     bottom: -6vh;
     width: 14vh;
+  }
+
+  .burj {
+    bottom: -6.75vh;
+    left: 20vh;
+    width: 7vh;
   }
 }
 
@@ -81,6 +108,12 @@
     font-size: 2.5vh;
     bottom: 3vh;
     left: 0vh;
+  }
+
+  .burj {
+    bottom: -6vh;
+    left: 35vh;
+    width: 8vh;
   }
 }
 
@@ -102,5 +135,11 @@
   .waterfall {
     width: 17vh;
     bottom: -5.5vh;
+  }
+
+  .burj {
+    bottom: -5vh;
+    left: 33vh;
+    width: 8vh;
   }
 }

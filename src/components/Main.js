@@ -23,7 +23,11 @@ function Main() {
   return (
     <>
       <section className="main-section" id="section1">
-        <div className="grass-container">
+        <div
+          className={`grass-container ${
+            isFlyWithAceClicked ? "ace-activated" : ""
+          }`}
+        >
           <div className="grass-left">
             <Grass />
           </div>

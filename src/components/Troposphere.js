@@ -3,6 +3,7 @@ import "./troposphere.css";
 import HeightLine, { setVisibilityCallback } from "./HeightLine";
 import Balloon from "../photos/hot-air-balloon.png";
 import Waterfall from "../photos/tallest-waterfall.png";
+import Burj from "../photos/burj-khalifa.png";
 
 function Troposphere() {
   const [isHeightLineVisible, setHeightLineVisibility] = useState(false);
@@ -35,13 +36,18 @@ function Troposphere() {
             <h3 className="balloon-text balloon-text-1">Average hot air</h3>
             <h3 className="balloon-text balloon-text-2">balloon altitude</h3>
 
-            {/* Waterfall */}
+            {/* Angel Falls */}
             <img
               src={Waterfall}
-              alt="Tallest Waterfall - Angel Falls"
+              alt="Tallest Waterfall, Angel Falls"
               className="waterfall"
             />
             <h3 className="waterfall-text">Tallest waterfall</h3>
+
+            {/* Burj Khalifa */}
+            <img src={Burj} alt="Burj Khalifa" className="burj" />
+            <h3 className="burj-text burj-text-1">Tallest man</h3>
+            <h3 className="burj-text burj-text-2">made structure</h3>
           </>
         )}
       </section>
