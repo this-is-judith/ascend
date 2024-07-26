@@ -3,6 +3,7 @@ import "./sky.css";
 import TroposphereDemo from "./TroposphereDemo";
 import Troposphere from "./Troposphere";
 import HeightLine from "./HeightLine";
+import Stratosphere from "./Stratosphere";
 
 function Sky() {
   return (
@@ -103,10 +104,7 @@ function Sky() {
       <TroposphereDemo />
       <TroposphereDemo />
       <TroposphereDemo />
-      <TroposphereDemo />
-      <TroposphereDemo />
-      <TroposphereDemo />
-      <TroposphereDemo />
+      <Stratosphere />
       <Troposphere />
       <HeightLine />
     </div>
