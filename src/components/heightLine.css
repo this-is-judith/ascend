@@ -3,7 +3,7 @@
   bottom: 50vh;
   z-index: 1000;
   width: 100%;
-  border-bottom: 0.2vh dashed black;
+  border-bottom: 0.2vh dashed white;
   text-align: center;
   padding-bottom: 1vh;
 }
@@ -12,6 +12,7 @@
   font-size: 3vh;
   font-family: "baloo 2", cursive, sans-serif;
   font-weight: 500;
+  color: white;
 }
 
 /*=============== Media Queries ===============*/
