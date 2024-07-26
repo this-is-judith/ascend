@@ -4,7 +4,7 @@ import "./troposhere.css";
 function Troposphere() {
   return (
     <>
-      <section className="troposhere-container">
+      <section className="troposphere-container">
         This is an actual Troposhere
       </section>
     </>
