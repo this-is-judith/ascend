@@ -108,7 +108,7 @@ function Sky() {
       <TroposphereDemo />
       <TroposphereDemo />
       <Troposphere />
-      {/* <HeightLine /> */}
+      <HeightLine />
     </div>
   );
 }

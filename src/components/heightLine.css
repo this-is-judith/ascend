@@ -1,0 +1,8 @@
+.height-line-container {
+  border: 0.1vh solid black;
+  position: fixed;
+  bottom: 50vh;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}

@@ -2,29 +2,29 @@ import React, { useEffect, useState } from "react";
 import "./heightLine.css";
 
 const HeightLine = () => {
-  const [scrollY, setScrollY] = useState(window.scrollY);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleHeightLineScroll = () => {
-      setScrollY(window.scrollY);
+      const viewportHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollPosition = window.scrollY;
+
+      // Calculate the distance from the bottom of the page
+      const distanceFromBottom =
+        documentHeight - (scrollPosition + viewportHeight);
+
+      // Set visibility if the distance from the bottom is greater than 80% of the viewport height
+      setIsVisible(distanceFromBottom > 0.8 * viewportHeight);
     };
 
     window.addEventListener("scroll", handleHeightLineScroll);
+    handleHeightLineScroll(); // Check visibility on mount as well
+
     return () => window.removeEventListener("scroll", handleHeightLineScroll);
   }, []);
 
-  return (
-    <div className="height-line-container">
-      <div
-        className="height-line"
-        style={{ height: `${scrollY + window.innerHeight}px` }}
-      >
-        <div className="height-marker" style={{ top: "50vh" }}></div>
-        <div className="height-marker" style={{ top: "100vh" }}></div>
-        {/* Add more markers if needed */}
-      </div>
-    </div>
-  );
+  return <>{isVisible && <div className="height-line-container"></div>};</>;
 };
 
 export default HeightLine;
