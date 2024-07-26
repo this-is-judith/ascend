@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-import Stratosphere from "./components/Stratosphere";
 import BeyondSpace from "./components/BeyondSpace";
 import Sky from "./components/Sky";
 
