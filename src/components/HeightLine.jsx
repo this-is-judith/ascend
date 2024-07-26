@@ -24,7 +24,16 @@ const HeightLine = () => {
     return () => window.removeEventListener("scroll", handleHeightLineScroll);
   }, []);
 
-  return <>{isVisible && <div className="height-line-container"></div>};</>;
+  return (
+    <>
+      {isVisible && (
+        <div className="height-line-container">
+          <span className="height-line-text">1 km high</span>
+        </div>
+      )}
+      ;
+    </>
+  );
 };
 
 export default HeightLine;

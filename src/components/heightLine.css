@@ -1,8 +1,22 @@
 .height-line-container {
-  border: 0.1vh solid black;
   position: fixed;
   bottom: 50vh;
-  right: 0;
   z-index: 1000;
   width: 100%;
+  border-bottom: 0.2vh dashed black;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.height-line-text {
+  font-size: 3vh;
+  font-family: "baloo 2", cursive, sans-serif;
+}
+
+/*=============== Media Queries ===============*/
+/* For larger screens */
+@media (min-width: 768px) {
+  .height-line-text {
+    font-size: 4vh;
+  }
 }
