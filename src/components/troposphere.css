@@ -11,6 +11,19 @@
   bottom: 0vh;
   right: 5vh;
   width: 15vh;
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }
 
 /*=============== Media Queries ===============*/
