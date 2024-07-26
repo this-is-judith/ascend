@@ -17,8 +17,6 @@
 .balloon-text {
   font-size: 2.5vh;
   position: absolute;
-  color: black;
-  font-weight: 600;
 }
 
 .balloon-text-1 {
@@ -33,9 +31,16 @@
 
 .waterfall {
   position: absolute;
-  bottom: 0vh;
-  left: 2vh;
-  width: 10vh;
+  bottom: -7vh;
+  left: 0vh;
+  width: 15vh;
+}
+
+.waterfall-text {
+  font-size: 2.5vh;
+  position: absolute;
+  bottom: 1vh;
+  left: 0vh;
 }
 
 @keyframes sway {
@@ -51,7 +56,34 @@
 }
 
 /*=============== Media Queries ===============*/
+/* For smaller screens */
+@media (min-width: 390px) {
+  .waterfall {
+    bottom: -6.5vh;
+    width: 13vh;
+  }
+}
+
+@media (min-width: 414px) {
+  .waterfall {
+    bottom: -6vh;
+    width: 14vh;
+  }
+}
+
 /* For larger screens */
+@media (min-width: 768px) {
+  .waterfall {
+    width: 16vh;
+  }
+
+  .waterfall-text {
+    font-size: 2.5vh;
+    bottom: 3vh;
+    left: 0vh;
+  }
+}
+
 @media (min-width: 1024px) {
   .balloon {
     width: 20vh;
@@ -65,5 +97,10 @@
   .balloon-text-2 {
     bottom: 20vh;
     right: 5vh;
+  }
+
+  .waterfall {
+    width: 17vh;
+    bottom: -5.5vh;
   }
 }

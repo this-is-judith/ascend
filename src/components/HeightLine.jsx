@@ -60,7 +60,9 @@ const HeightLine = () => {
     <>
       {isVisible && (
         <div className="height-line-container">
-          <span className="height-line-text">{height} KILOMETERS HIGH</span>
+          <span className="height-line-text">
+            {height} {height == 1 ? "KILOMETER" : "KILOMETERS"} HIGH
+          </span>
         </div>
       )}
     </>

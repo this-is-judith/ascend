@@ -32,7 +32,6 @@ function Troposphere() {
               alt="Average Hot Air Balloon Height"
               className="balloon"
             />
-
             <h3 className="balloon-text balloon-text-1">Average hot air</h3>
             <h3 className="balloon-text balloon-text-2">balloon altitude</h3>
 
@@ -42,6 +41,7 @@ function Troposphere() {
               alt="Tallest Waterfall - Angel Falls"
               className="waterfall"
             />
+            <h3 className="waterfall-text">Tallest waterfall</h3>
           </>
         )}
       </section>
