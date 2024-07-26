@@ -98,11 +98,6 @@
     width: 15vw;
   }
 
-  .navbar-item {
-    padding-left: 0.7vh;
-    padding-right: 0.7vh;
-  }
-
   .navbar-item-icon {
     font-size: 3vh;
   }
@@ -113,11 +108,6 @@
 }
 
 @media (width: 1024px) and (height: 600px) {
-  .navbar-container {
-    padding-left: -1vh;
-    padding-right: -1vh;
-  }
-
   .navbar-item-icon {
     font-size: 4vh;
   }
@@ -130,11 +120,6 @@
 @media (min-width: 1280px) {
   .nav-logo img {
     width: 12vw;
-  }
-
-  .navbar-container {
-    padding-left: 0vh;
-    padding-right: 0vh;
   }
 
   .navbar-item-icon {

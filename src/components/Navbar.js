@@ -10,8 +10,10 @@ import { FaCircleInfo } from "react-icons/fa6";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [isDarkModeClicked, setIsDarkModeClicked] = useState(false);
 
   const toggleShowMenu = () => setShowMenu(!showMenu);
+  const toggleDarkModeClicked = () => setIsDarkModeClicked(!isDarkModeClicked);
 
   return (
     <>
@@ -53,11 +55,10 @@ function Navbar() {
             </div>
 
             {/* Dark/Light Mode */}
-            <div className="navbar-item dark">
+            <div className="navbar-item dark" onClick={toggleDarkModeClicked}>
               <div className="navbar-item-icon dark-icon">
-                <LiaToggleOffSolid />
-                {/* onClick={handleClick} */}
-                {/* className={click ? "height-line" : "crossed-out-height-line"} */}
+                {!isDarkModeClicked && <LiaToggleOffSolid />}
+                {isDarkModeClicked && <LiaToggleOnSolid />}
               </div>
               <div className="navbar-item-label dark-label">DARK</div>
             </div>
