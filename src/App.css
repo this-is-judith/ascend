@@ -17,6 +17,10 @@ body {
   );
 }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
 .text-2d-effect {
   font-size: 4.5vh;
   text-shadow: 1vh 1vh 1vh grey, 1vh 1vh 1vh black;

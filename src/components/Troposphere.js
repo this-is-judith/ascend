@@ -23,12 +23,18 @@ function Troposphere() {
       <section className="troposphere-container">
         <h2>TROPOSPHERE</h2>
 
+        {/* Hot Air Balloon */}
         {isHeightLineVisible && (
-          <img
-            src={Balloon}
-            alt="Average Hot Air Balloon Height"
-            className="balloon"
-          />
+          <>
+            <img
+              src={Balloon}
+              alt="Average Hot Air Balloon Height"
+              className="balloon"
+            />
+
+            <h3 className="balloon-text balloon-text-1">Average hot air</h3>
+            <h3 className="balloon-text balloon-text-2">balloon altitude</h3>
+          </>
         )}
       </section>
     </>
