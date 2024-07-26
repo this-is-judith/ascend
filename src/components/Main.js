@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./main.css";
 import { FaPerson } from "react-icons/fa6";
 import Grass from "./Grass";
 
 function Main() {
+  const [isScrollUpClicked, setIsScrollUpClicked] = useState(false);
+  const [isFlyWithAceClicked, setIsFlyWithAceClicked] = useState(false);
+
   const handleScrollUp = () => {
-    // Scroll up by the height of one viewport
+    setIsScrollUpClicked(true);
+
     window.scrollTo({
       top: window.scrollY - window.innerHeight,
-      behavior: "smooth", // Optional: Smooth scrolling
+      behavior: "smooth",
     });
+  };
+
+  const handleFlyWithAce = () => {
+    setIsFlyWithAceClicked(true);
   };
 
   return (
@@ -22,7 +30,11 @@ function Main() {
 
           <div className="grass-middle">
             <div className="grass-middle-top"></div>
-            <div className="grass-middle-bottom"></div>
+            <div
+              className={`grass-middle-bottom ${
+                isFlyWithAceClicked ? "ace-activated" : ""
+              }`}
+            ></div>
           </div>
 
           <div className="grass-right">
@@ -49,7 +61,9 @@ function Main() {
 
           <div className="instructions">
             <div className="instruction-1">
-              <p class="enlarge-text">Click here to fly with Ace</p>
+              <p class="enlarge-text" onClick={handleFlyWithAce}>
+                Click here to fly with Ace
+              </p>
             </div>
 
             <div className="instruction-2">

@@ -22,7 +22,7 @@ function App() {
     let scrollInterval;
 
     // Function to scroll up the page automatically
-    const scrollUp = () => {
+    const automaticScrollUp = () => {
       const scrollStep = -2; // Change this value to adjust the speed
       const intervalTime = 10; // Adjust the interval time for smoother scrolling
 
@@ -36,7 +36,7 @@ function App() {
     };
 
     // Start scrolling up when the component mounts
-    // scrollUp();
+    // automaticScrollUp();
 
     // Cleanup function to clear the interval if the component unmounts
     return () => clearInterval(scrollInterval);

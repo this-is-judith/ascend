@@ -82,6 +82,11 @@
 .grass-middle-bottom {
   flex: 1;
   background-color: white;
+  transition: background-color 1s ease-in-out;
+}
+
+.grass-middle-bottom.ace-activated {
+  background-color: #a2c2e4;
 }
 
 .ace-container {
@@ -99,6 +104,7 @@
 .ace-cage {
   flex: 1.75;
   border: 0.3vh solid white;
+  border-top: none;
   display: flex;
   align-items: end;
   justify-content: center;
