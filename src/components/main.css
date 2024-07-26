@@ -150,11 +150,8 @@
   cursor: pointer;
 }
 
-.house {
-  color: white;
-  font-size: 7vh;
-  position: absolute;
-  left: 2vh;
+.grass-right {
+  border-top: 0.1vh solid black;
 }
 
 /*=============== Media Queries ===============*/

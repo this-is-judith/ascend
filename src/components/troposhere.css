@@ -1,5 +1,14 @@
 .troposphere-container {
   height: 115vh;
   border-top: 0.2vh solid black;
-  border-bottom: 0.2vh solid black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.balloon {
+  position: absolute;
+  bottom: 0vh;
+  right: 5vh;
+  width: 12vh;
 }
