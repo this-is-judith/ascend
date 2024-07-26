@@ -66,7 +66,10 @@ function Navbar({ isPopupVisible, onTogglePopup }) {
                 {!isDarkModeClicked && <LiaToggleOffSolid />}
                 {isDarkModeClicked && <LiaToggleOnSolid />}
               </div>
-              <div className="navbar-item-label dark-label">DARK</div>
+
+              <div className="navbar-item-label dark-label">
+                {!isDarkModeClicked ? "DARK" : "LIGHT"}
+              </div>
             </div>
           </div>
         )}
