@@ -1,5 +1,5 @@
 import React from "react";
-import "./troposheredemo.css";
+import "./tropospheredemo.css";
 
 function TroposphereDemo() {
   return (

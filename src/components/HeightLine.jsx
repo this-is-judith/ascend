@@ -1,7 +1,12 @@
+// HeightLine.js
 import React, { useEffect, useState } from "react";
 import "./heightLine.css";
 
+// Callback function to handle visibility changes
+let onVisibilityChange = (isVisible) => {};
+
 const HeightLine = () => {
+  // VH TO HEIGHT CONVERSIONS
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -26,6 +31,7 @@ const HeightLine = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // VISIBILITY OF HEIGHT LINE
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -38,8 +44,10 @@ const HeightLine = () => {
       const distanceFromBottom =
         documentHeight - (scrollPosition + viewportHeight);
 
-      // Set visibility if the distance from the bottom is greater than 79% of the viewport height
-      setIsVisible(distanceFromBottom > 0.24 * viewportHeight);
+      // Set visibility if the distance from the bottom is greater than 24% of the viewport height
+      const newVisibility = distanceFromBottom > 0.24 * viewportHeight;
+      setIsVisible(newVisibility);
+      onVisibilityChange(newVisibility); // Call the callback function
     };
 
     window.addEventListener("scroll", handleHeightLineScroll);
@@ -55,9 +63,13 @@ const HeightLine = () => {
           <span className="height-line-text">{height} KILOMETERS HIGH</span>
         </div>
       )}
-      ;
     </>
   );
+};
+
+// Function to set the callback
+export const setVisibilityCallback = (callback) => {
+  onVisibilityChange = callback;
 };
 
 export default HeightLine;

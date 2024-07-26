@@ -1,7 +1,7 @@
 import React from "react";
 import "./sky.css";
 import TroposphereDemo from "./TroposphereDemo";
-import Troposphere from "./Troposhere";
+import Troposphere from "./Troposphere";
 import HeightLine from "./HeightLine";
 
 function Sky() {
