@@ -4,6 +4,14 @@ import { FaPerson } from "react-icons/fa6";
 import Grass from "./Grass";
 
 function Main() {
+  const handleScrollUp = () => {
+    // Scroll up by the height of one viewport
+    window.scrollTo({
+      top: window.scrollY - window.innerHeight,
+      behavior: "smooth", // Optional: Smooth scrolling
+    });
+  };
+
   return (
     <>
       <section className="main-section" id="section1">
@@ -45,7 +53,9 @@ function Main() {
             </div>
 
             <div className="instruction-2">
-              <p class="enlarge-text">Scroll up to continue without Ace</p>
+              <p class="enlarge-text" onClick={handleScrollUp}>
+                Scroll up to continue without Ace
+              </p>
             </div>
 
             <div className="instruction-3">
