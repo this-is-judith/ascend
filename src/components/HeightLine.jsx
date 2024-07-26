@@ -17,7 +17,7 @@ const HeightLine = () => {
         0.21 * window.innerHeight;
       const scrollFromBottom = totalHeight - window.scrollY;
       const vh = window.innerHeight;
-      const km = (scrollFromBottom / vh) * 10; // Convert vh to kilometers (10 km per vh)
+      const km = (scrollFromBottom / vh) * 10; // Convert vh to kilometers (1 vh = 0.1km)
       setHeight(km.toFixed(0)); // Set height in kilometers with 2 decimal places
     };
 

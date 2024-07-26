@@ -1,5 +1,5 @@
 .sky-container {
-  height: 10015vh;
+  height: 102600vh;
 }
 
 .sky-gradient {
@@ -9,13 +9,8 @@
     #7f9bb3,
     #4b6a9d,
     #2e3a5a,
-    #000000,
-    #000000,
-    #000000,
-    #666666,
-    #999999,
-    #cccccc,
-    #ffffff
+    #2e3a5a,
+    #000000
   );
 }
 

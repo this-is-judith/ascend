@@ -1,7 +1,8 @@
 .outro-section {
-  height: 100vh;
+  height: 113vh;
   display: flex;
   flex-direction: column;
+  background-color: grey;
 }
 
 .topmost,
