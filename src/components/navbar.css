@@ -1,5 +1,4 @@
 .navbar {
-  /* outline: 0.4vh solid yellow; */
   position: fixed;
   bottom: 1vh;
   right: 1vw;
@@ -7,6 +6,8 @@
   flex-direction: column;
   align-items: center;
   z-index: 1000;
+  font-family: "baloo 2", cursive, sans-serif;
+  font-weight: 600;
 }
 
 .nav-logo {
@@ -23,26 +24,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 2vh;
+  background-color: #fffacd;
 }
 
 .navbar-item {
-  outline: 0.1vh solid black;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2vh;
+  color: black;
+}
+
+.jump {
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+}
+
+.jump-icon {
+  margin-top: 2vh;
+}
+
+.dark {
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
 }
 
 .navbar-item-icon {
-  /* outline: 0.2vh solid green; */
-  padding: 0.5vh;
-  padding-top: 1vh;
-  font-size: 4vh;
-}
-
-.navbar-item-label {
-  /* outline: 0.2vh solid blue; */
-  padding: 0.5vh;
+  font-size: 3.5vh;
+  margin-bottom: -1.75vh;
 }
 
 /*=============== Media Queries ===============*/
