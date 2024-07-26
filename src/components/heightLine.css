@@ -11,6 +11,7 @@
 .height-line-text {
   font-size: 3vh;
   font-family: "baloo 2", cursive, sans-serif;
+  font-weight: 500;
 }
 
 /*=============== Media Queries ===============*/

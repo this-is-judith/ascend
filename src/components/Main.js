@@ -11,7 +11,7 @@ function Main() {
     setIsScrollUpClicked(true);
 
     window.scrollTo({
-      top: window.scrollY - 0.81 * window.innerHeight,
+      top: window.scrollY - 0.8 * window.innerHeight,
       behavior: "smooth",
     });
   };
