@@ -1,4 +1,5 @@
 .troposphere-container {
   height: 115vh;
-  background-color: grey;
+  border-top: 0.2vh solid black;
+  border-bottom: 0.2vh solid black;
 }

@@ -5,6 +5,7 @@
   border-bottom: 4vh solid green; /* Create the blade color */
   transform-origin: bottom;
   animation: sway-all 5s infinite cubic-bezier(0.42, 0, 0.58, 1);
+  z-index: 1000;
 }
 
 .grass-blade::before {

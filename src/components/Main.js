@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./main.css";
 import { FaPerson } from "react-icons/fa6";
+import { BsHouseFill } from "react-icons/bs";
+import { GiAirBalloon } from "react-icons/gi";
 import Grass from "./Grass";
 
 function Main() {
@@ -26,6 +28,7 @@ function Main() {
         <div className="grass-container">
           <div className="grass-left">
             <Grass />
+            <BsHouseFill className="house" />
           </div>
 
           <div className="grass-middle">
