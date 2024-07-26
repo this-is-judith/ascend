@@ -150,10 +150,6 @@
   cursor: pointer;
 }
 
-.grass-right {
-  border-top: 0.1vh solid black;
-}
-
 /*=============== Media Queries ===============*/
 /* For larger screens */
 @media (min-width: 667px) {

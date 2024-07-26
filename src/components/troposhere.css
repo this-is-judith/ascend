@@ -10,5 +10,13 @@
   position: absolute;
   bottom: 0vh;
   right: 5vh;
-  width: 12vh;
+  width: 15vh;
+}
+
+/*=============== Media Queries ===============*/
+/* For larger screens */
+@media (min-width: 1024px) {
+  .balloon {
+    width: 20vh;
+  }
 }
