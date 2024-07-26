@@ -31,6 +31,13 @@
   right: 2.75vh;
 }
 
+.waterfall {
+  position: absolute;
+  bottom: 0vh;
+  left: 2vh;
+  width: 10vh;
+}
+
 @keyframes sway {
   0% {
     transform: translateX(-10px);

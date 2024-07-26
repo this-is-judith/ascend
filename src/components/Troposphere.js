@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./troposphere.css";
 import HeightLine, { setVisibilityCallback } from "./HeightLine";
-import Balloon from "../photos/hot-air-balloon.png"; // Update with the correct path
+import Balloon from "../photos/hot-air-balloon.png";
+import Waterfall from "../photos/tallest-waterfall.png";
 
 function Troposphere() {
   const [isHeightLineVisible, setHeightLineVisibility] = useState(false);
@@ -23,9 +24,9 @@ function Troposphere() {
       <section className="troposphere-container">
         <h2>TROPOSPHERE</h2>
 
-        {/* Hot Air Balloon */}
         {isHeightLineVisible && (
           <>
+            {/* Hot Air Balloon */}
             <img
               src={Balloon}
               alt="Average Hot Air Balloon Height"
@@ -34,6 +35,13 @@ function Troposphere() {
 
             <h3 className="balloon-text balloon-text-1">Average hot air</h3>
             <h3 className="balloon-text balloon-text-2">balloon altitude</h3>
+
+            {/* Waterfall */}
+            <img
+              src={Waterfall}
+              alt="Tallest Waterfall - Angel Falls"
+              className="waterfall"
+            />
           </>
         )}
       </section>
