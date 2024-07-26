@@ -56,23 +56,82 @@
   margin-bottom: -1.75vh;
 }
 
+.navbar-item-label {
+  font-size: 2.25vh;
+}
+
 /*=============== Media Queries ===============*/
 /* For medium screens */
 @media (min-width: 480px) {
   .nav-logo img {
-    width: 20vw; /* Adjust for tablet or small desktop */
+    width: 20vw;
   }
 }
 
 /* For larger screens */
 @media (min-width: 768px) {
   .nav-logo img {
-    width: 15vw; /* Adjust for larger desktops */
+    width: 15vw;
+  }
+  .navbar-item-label {
+    font-size: 2.5vh;
+  }
+
+  .navbar-container {
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+  }
+
+  .navbar-item-icon {
+    font-size: 3.5vh;
   }
 }
 
 @media (min-width: 1024px) {
   .nav-logo img {
-    width: 12vw; /* Adjust for larger desktops */
+    width: 12vw;
+  }
+
+  .navbar-container {
+    padding-left: 0.7vh;
+    padding-right: 0.7vh;
+  }
+
+  .navbar-item-icon {
+    font-size: 3vh;
+  }
+
+  .navbar-item-label {
+    font-size: 2.5vh;
+  }
+}
+
+@media (width: 1024px) and (height: 600px) {
+  .navbar-container {
+    padding-left: -1vh;
+    padding-right: -1vh;
+  }
+
+  .navbar-item-icon {
+    font-size: 4vh;
+  }
+
+  .navbar-item-label {
+    font-size: 3.5vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar-container {
+    padding-left: -3vh;
+    padding-right: -3vh;
+  }
+
+  .navbar-item-icon {
+    font-size: 3.5vh;
+  }
+
+  .navbar-item-label {
+    font-size: 3vh;
   }
 }
