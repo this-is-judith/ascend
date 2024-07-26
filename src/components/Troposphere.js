@@ -42,7 +42,8 @@ function Troposphere() {
               alt="Tallest Waterfall, Angel Falls"
               className="waterfall"
             />
-            <h3 className="waterfall-text">Tallest waterfall</h3>
+            <h3 className="waterfall-text waterfall-text-1">Tallest</h3>
+            <h3 className="waterfall-text waterfall-text-2">waterfall</h3>
 
             {/* Burj Khalifa */}
             <img src={Burj} alt="Burj Khalifa" className="burj" />

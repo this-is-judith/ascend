@@ -39,8 +39,16 @@
 .waterfall-text {
   font-size: 2.5vh;
   position: absolute;
+}
+
+.waterfall-text-1 {
+  bottom: 3.5vh;
+  left: 3vh;
+}
+
+.waterfall-text-2 {
   bottom: 1vh;
-  left: 0vh;
+  left: 1.5vh;
 }
 
 .burj {
@@ -48,6 +56,21 @@
   bottom: -7.5vh;
   left: 25vh;
   width: 8vh;
+}
+
+.burj-text {
+  font-size: 2.5vh;
+  position: absolute;
+}
+
+.burj-text-1 {
+  bottom: 1.25vh;
+  left: 18.75vh;
+}
+
+.burj-text-2 {
+  bottom: -1.5vh;
+  left: 15.75vh;
 }
 
 @keyframes sway {
@@ -72,7 +95,58 @@
   }
 }
 
+@media (width: 344px) and (height: 882px) {
+  .balloon {
+    bottom: 0vh;
+    right: 3vh;
+    width: 15vh;
+  }
+
+  .balloon-text-1 {
+    right: 1.15vh;
+  }
+
+  .balloon-text-2 {
+    right: 0.75vh;
+  }
+
+  .waterfall {
+    width: 13vh;
+    bottom: -6.5vh;
+  }
+
+  .burj {
+    bottom: -6.5vh;
+    left: 16vh;
+    width: 6vh;
+  }
+
+  .burj-text-1 {
+    bottom: 1.25vh;
+    left: 13.75vh;
+  }
+
+  .burj-text-2 {
+    bottom: -1.5vh;
+    left: 10.75vh;
+  }
+}
+
 @media (min-width: 390px) {
+  .balloon {
+    bottom: 0vh;
+    right: 3vh;
+    width: 15vh;
+  }
+
+  .balloon-text-1 {
+    right: 1.15vh;
+  }
+
+  .balloon-text-2 {
+    right: 0.75vh;
+  }
+
   .waterfall {
     bottom: -6.5vh;
     width: 13vh;
@@ -83,9 +157,31 @@
     left: 20vh;
     width: 6vh;
   }
+
+  .burj-text-1 {
+    bottom: 0.75vh;
+    left: 15.25vh;
+  }
+
+  .burj-text-2 {
+    bottom: -2vh;
+    left: 13vh;
+  }
 }
 
 @media (min-width: 414px) {
+  .balloon {
+    right: 2.5vh;
+  }
+
+  .balloon-text-1 {
+    right: 0.65vh;
+  }
+
+  .balloon-text-2 {
+    right: 0.25vh;
+  }
+
   .waterfall {
     bottom: -6vh;
     width: 14vh;
@@ -96,24 +192,49 @@
     left: 20vh;
     width: 7vh;
   }
+
+  .burj-text-1 {
+    bottom: 1.25vh;
+    left: 15.25vh;
+  }
+
+  .burj-text-2 {
+    bottom: -1.5vh;
+    left: 13vh;
+  }
 }
 
 /* For larger screens */
 @media (min-width: 768px) {
   .waterfall {
     width: 16vh;
+    bottom: -5.5vh;
   }
 
-  .waterfall-text {
-    font-size: 2.5vh;
+  .waterfall-text-1 {
+    bottom: 5.5vh;
+    left: 5vh;
+  }
+
+  .waterfall-text-2 {
     bottom: 3vh;
-    left: 0vh;
+    left: 3.5vh;
   }
 
   .burj {
-    bottom: -6vh;
-    left: 35vh;
+    bottom: -5.75vh;
+    left: 33vh;
     width: 8vh;
+  }
+
+  .burj-text-1 {
+    bottom: 3.75vh;
+    left: 28.75vh;
+  }
+
+  .burj-text-2 {
+    bottom: 1vh;
+    left: 25.75vh;
   }
 }
 
@@ -141,5 +262,15 @@
     bottom: -5vh;
     left: 33vh;
     width: 8vh;
+  }
+
+  .burj-text-1 {
+    bottom: 4.75vh;
+    left: 30vh;
+  }
+
+  .burj-text-2 {
+    bottom: 2vh;
+    left: 27vh;
   }
 }
