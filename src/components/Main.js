@@ -3,6 +3,7 @@ import "./main.css";
 import { FaPerson } from "react-icons/fa6";
 import Grass from "./Grass";
 import Popup from "./Popup";
+import Navbar from "./Navbar";
 
 function Main() {
   // Tutorial Popup
@@ -125,6 +126,11 @@ function Main() {
 
           {isPopupVisible && <Popup onClose={handlePopupToggle} />}
         </div>
+
+        <Navbar
+          isPopupVisible={isPopupVisible}
+          onTogglePopup={handlePopupToggle}
+        />
       </section>
     </>
   );

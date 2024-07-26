@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.css";
 
 import logo from "../photos/ascend-logo.png";
@@ -8,17 +8,23 @@ import { TbRuler2, TbRuler2Off } from "react-icons/tb";
 import { LiaToggleOffSolid, LiaToggleOnSolid } from "react-icons/lia";
 import { FaCircleInfo } from "react-icons/fa6";
 
-function Navbar() {
+function Navbar({ isPopupVisible, onTogglePopup }) {
   const [showMenu, setShowMenu] = useState(false);
+  const [showLogo, setShowLogo] = useState(!isPopupVisible); // Initialize based on isPopupVisible
   const [isDarkModeClicked, setIsDarkModeClicked] = useState(false);
 
   const toggleShowMenu = () => setShowMenu(!showMenu);
   const toggleDarkModeClicked = () => setIsDarkModeClicked(!isDarkModeClicked);
 
+  // Update showLogo based on isPopupVisible changes
+  useEffect(() => {
+    setShowLogo(!isPopupVisible);
+  }, [isPopupVisible]);
+
   return (
     <>
       <nav className="navbar">
-        {showMenu && (
+        {showMenu && showLogo && (
           <div className="navbar-container">
             {/* Jump */}
             <div className="navbar-item jump">
@@ -65,9 +71,11 @@ function Navbar() {
           </div>
         )}
 
-        <div href="" className="nav-logo" onClick={toggleShowMenu}>
-          <img src={logo} alt="Ascend Logo" />
-        </div>
+        {!isPopupVisible && (
+          <div href="" className="nav-logo" onClick={toggleShowMenu}>
+            <img src={logo} alt="Ascend Logo" />
+          </div>
+        )}
       </nav>
     </>
   );

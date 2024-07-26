@@ -13,15 +13,111 @@
 .popup-content {
   background: white;
   padding: 2vh;
+  padding-top: 0vh;
   border-radius: 1.5vh;
   width: 80vw;
   color: black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
 }
 
-.short-description,
+.content-item p {
+  margin: 1vh;
+}
+
+.content-item {
+  /* outline: 0.2vh solid red; */
+}
+
+.menu-item {
+  /* outline: 0.2vh solid green; */
+}
+
+.content-item p {
+  margin: 1vh;
+}
+
 .option {
+  display: flex;
+  text-align: left;
+  margin: 0;
+}
+
+.short-description {
   font-weight: 500;
+  margin: 0;
+  margin-top: -3vh;
+}
+
+.option-1 {
+  margin-top: 2vh;
+}
+
+.option-1-1,
+.option-1-2 {
+  flex: 1;
+  border: 0.2vh solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-1-2 {
+  flex: 8;
+  border-left: none;
+}
+
+.option-2-1,
+.option-2-2 {
+  flex: 1;
+  border: 0.2vh solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-2-1 {
+  border-top: none;
+}
+
+.option-2-2 {
+  flex: 8;
+  border-left: none;
+  border-top: none;
+}
+
+.features {
+  margin-top: 1vh;
+}
+
+.menu-tutorial {
+  margin-bottom: 4vh;
+  flex-direction: column;
+}
+
+.menu-button {
+  width: 7vh;
+}
+
+.menu-item {
+  border: 0.2vh solid black;
+  display: flex;
+}
+
+.left,
+.middle,
+.right {
+  outline: 0.2vh solid red;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 2;
 }
 
 .close-button {
@@ -36,8 +132,4 @@
 
 .close-button:hover {
   background-color: #0056b3;
-}
-
-.menu-button {
-  width: 8vh;
 }
