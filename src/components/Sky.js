@@ -4,6 +4,7 @@ import TroposphereDemo from "./TroposphereDemo";
 import Troposphere from "./Troposphere";
 import HeightLine from "./HeightLine";
 import Stratosphere from "./Stratosphere";
+import Temp from "./Temp";
 
 function Sky() {
   return (
@@ -104,6 +105,7 @@ function Sky() {
       <TroposphereDemo />
       <TroposphereDemo />
       <TroposphereDemo />
+      <Temp />
       <Stratosphere />
       <Troposphere />
       <HeightLine />
