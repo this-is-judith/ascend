@@ -2,10 +2,18 @@ import React, { useState, useEffect } from "react";
 import "./main.css";
 import { FaPerson } from "react-icons/fa6";
 import Grass from "./Grass";
+import Popup from "./Popup";
 
 function Main() {
+  // Tutorial Popup
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handlePopupToggle = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
+
   // Check visibiity of height line
-  const [isVisible, setIsVisible] = useState(false);
+  const [isHeightLineVisible, setisHeightLineVisible] = useState(false);
 
   useEffect(() => {
     const handleHeightLineScroll = () => {
@@ -19,7 +27,7 @@ function Main() {
 
       // Set visibility if the distance from the bottom is greater than 24% of the viewport height
       const newVisibility = distanceFromBottom > 0.24 * viewportHeight;
-      setIsVisible(newVisibility);
+      setisHeightLineVisible(newVisibility);
     };
 
     window.addEventListener("scroll", handleHeightLineScroll);
@@ -52,7 +60,7 @@ function Main() {
         <div
           className={`grass-container ${
             isFlyWithAceClicked ? "ace-activated" : ""
-          } ${isVisible ? "main-hidden" : ""}`}
+          } ${isHeightLineVisible ? "main-hidden" : ""}`}
         >
           <div className="grass-left">
             <Grass />
@@ -63,7 +71,7 @@ function Main() {
             <div
               className={`grass-middle-bottom ${
                 isFlyWithAceClicked ? "ace-activated" : ""
-              } ${isVisible ? "main-hidden" : ""}`}
+              } ${isHeightLineVisible ? "main-hidden" : ""}`}
             ></div>
           </div>
 
@@ -73,7 +81,7 @@ function Main() {
         </div>
 
         <div className="intro crust-gradient">
-          {!isVisible && (
+          {!isHeightLineVisible && (
             <>
               <div className="ace-container">
                 <div className="ace-left"></div>
@@ -105,13 +113,17 @@ function Main() {
                 </div>
 
                 <div className="instruction-3">
-                  <p class="enlarge-text">Click here for a quick tutorial</p>
+                  <p class="enlarge-text" onClick={handlePopupToggle}>
+                    Click here for a quick tutorial
+                  </p>
                 </div>
               </div>
 
               <div className="filler"></div>
             </>
           )}
+
+          {isPopupVisible && <Popup onClose={handlePopupToggle} />}
         </div>
       </section>
     </>
