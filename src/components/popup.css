@@ -51,8 +51,12 @@
   margin-top: -3vh;
 }
 
+.bolder-font {
+  font-weight: 900;
+}
+
 .option-1 {
-  margin-top: 2vh;
+  margin-top: -1vh;
 }
 
 .option-1-1,
@@ -67,6 +71,7 @@
 .option-1-2 {
   flex: 8;
   border-left: none;
+  justify-content: start;
 }
 
 .option-2-1,
@@ -86,38 +91,15 @@
   flex: 8;
   border-left: none;
   border-top: none;
+  justify-content: start;
 }
 
 .features {
   margin-top: 1vh;
 }
 
-.menu-tutorial {
-  margin-bottom: 4vh;
-  flex-direction: column;
-}
-
 .menu-button {
   width: 7vh;
-}
-
-.menu-item {
-  border: 0.2vh solid black;
-  display: flex;
-}
-
-.left,
-.middle,
-.right {
-  outline: 0.2vh solid red;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right {
-  flex: 2;
 }
 
 .close-button {
