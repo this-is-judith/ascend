@@ -30,7 +30,7 @@ const Popup = ({ onClose }) => {
           <div className="option-2-2">
             <p>
               Scroll up manually. It's a lot, so get ready for 10,000+ km of
-              content!
+              scrolling!
             </p>
           </div>
         </div>

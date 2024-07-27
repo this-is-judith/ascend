@@ -1,4 +1,3 @@
-// HeightLine.js
 import React, { useEffect, useState } from "react";
 import "./heightLine.css";
 
@@ -64,9 +63,9 @@ const HeightLine = () => {
       {isVisible && (
         <div className="height-line-container">
           <span className="height-line-text">
-            {height > 10200
+            {height > 10250
               ? "??? KILOMETERS HIGH"
-              : `${height} ${height === 1 ? "KILOMETER" : "KILOMETERS"} HIGH`}
+              : `${height} ${height == 1 ? "KILOMETER" : "KILOMETERS"} HIGH`}
           </span>
         </div>
       )}
